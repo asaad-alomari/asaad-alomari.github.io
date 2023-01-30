@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareX Pharmacy</title>
+    <link rel="shortcuts icon" href="Images/Logo/logoo.png">
+    <link rel="stylesheet" href="styleGo.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Start Header-->
+    <div class="header">
+        <div class="container">
+        <img class="logo" src="Images/Logo/logoo.png"  alt="">
+        <li><a class="homepage.html" href="homepage.html">Home</a></li>
+        <li>
+            <a href="AvailableQuanilty.php">Products</a>
+            <select name="pages" onchange="location = this.value;">
+              <option>Branches</option>
+              <option value="AvailableQuanilty.php">Irbid</option>
+              <option value="KarakProducts.php">Karak</option>
+              <option value="Ma'an.php">Ma'an</option>
+              <option value="Amman.php">Amman</option>
+            </select>
+        </li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="AskDoctor.html">Ask a Doctor</a></li>
+        <li><a href="locations.html">Locations ꜜ</a></li>
+        <!--<li><a href="login.html">Account</a></li>-->
+
+        </a>
+            <div class="links">
+                <span class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul>    
+                    <li><a class="homepage.html" href="#">Home</a></li>
+                    <li>
+                        <a href="Amman.php">Products</a>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="AskDoctor.html">Ask a Doctor</a></li>
+                    <li>
+                        <a href="locations.html">Locations ꜜ</a>
+                        <!--<ul class="dropdown">
+                            <li><a href="#">Amman</a></li>
+                            <li><a href="#">Irbid</a></li>
+                            <li><a href="#">Karak</a></li>
+                            <li><a href="#">Ma'an</a></li>
+                        </ul><-->
+                    </li>
+                    <!--<li><a href="login.html">Account</a></li>-->
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>  
+    <!--End Header-->
+    <!--Start Landing Section-->
+    <div class="landing">
+        <div class="intro-text">
+            <h1>CareX Pharmacy</h1>
+            <button>Learn More</button>
+        </div>
+    </div>
+    <!--Start Features-->
+    <div class="featuers">
+        <div class="container">
+            <div class="feat">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fas fa-magic fa-3x"></i>
+                <h3>Unbeatable Quality</h3>
+                <p>At Lovely Cure, we pride ourselves on providing top-notch medical treatment and care to all of our patients. Our dedicated team of medical professionals is committed to helping you feel your best and get back to your normal life as soon as possible.</p>
+            </div>
+            <div class="feat">
+                <i class="fa-solid fa-hospital"></i>
+                <i class="fas fa-gem fa-3x"></i>
+                <h3>At Our Hospital</h3>
+                <p>Our hospital is equipped with the latest medical technology and facilities to ensure that you receive the best possible care. From our advanced diagnostic equipment to our comfortable patient rooms, we've got everything you need to feel safe and cared for during your stay with us.</p>
+            </div>
+            <div class="feat">
+                <i class="fa-solid fa-hospital"></i>
+                <i class="fas fa-globe-asia fa-3x"></i>
+                <h3>Worldwide Health Care</h3>
+                <p>At Worldwide Health Care, we believe that everyone deserves access to quality medical care. That's why we offer a wide range of services to people of all ages and backgrounds, no matter where you are in the world. Whether you need a routine check-up or specialized treatment, we've got you covered.</p>
+            </div>
+        </div>
+    </div>
+    <!--Start Services-->
+    <div class="services" id="services">
+        <div class="container">
+            <h2 class="speical-heading">Services</h2>
+            <p>It is easy to get a thousand prescriptions, but hard to get one single remedy.</p>
+            <div class="services-content">
+                <div class="col">
+                    <!--Start Service -->
+                    <div class="srv">
+                        <i class="fa-sharp fa-solid fa-user-nurse"></i>                        
+                        <div class="text" id="contact">
+                            <h3>Ask a Doctor</h3>
+                            <p>Get personalized medical advice from our team of licensed healthcare professionals.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="srv">
+                        <i class="fa-solid fa-pump-medical"></i>
+                            <div class="text" id="services">
+                            <h3>Our Products</h3>
+                            <p>Browse our wide selection of high-quality medications and medical supplies.
+                            </p>
+                        </div>
+                    </div>
+                    <!--End Service -->
+                </div>
+                <div class="col">
+                    <!--Start Service -->
+                    <div class="srv">
+                        <i class="fa-solid fa-truck-medical"></i>
+                            <div class="text">
+                            <h3>Find Us Near You</h3>
+                            <p>Our hospital has locations in Irbid, Karak, Amman, and Ma'an. Visit one of our locations to receive top-quality healthcare from our experienced team.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="srv">
+                        <i class="fa-solid fa-comment-medical"></i>
+                        <div class="text">
+                            <h3>Get In Touch</h3>
+                            <p>Contact us anytime to ask a question, make an appointment, or request more information about our services.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Calculate your BMI-->
+                    <p class="cal-para">Calculate Your BMI</p>
+
+                    <div class="wrapper-Height">
+                        <p>Height in CM:
+                            <input type="text" id="height"><br><span id="height_error"></span>
+                        </p>
+                        <p>Weight in KG:
+                            <input type="text" id="weight"><br><span id="weight_error"></span>
+                        </p>
+                        <button id="Calculate-ha">Calculate</button>
+                        <p id="output"></p>
+                    </div>
+                    <!--End Service -->
+                </div>
+                <div class="col">
+                    <div class="image">
+                        <img src="Images/Homepage/logo5.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Services-->
+    <!--Contact-->
+    <div class="contact">
+        <div class="container">
+            <h2 class="speical-heading">Contact Us</h2>
+            <p>We're help to help you.</p>
+            <div class="info">
+                <p class="label">Feel free to drop us a line at:</p>
+                    <a href="mailto:support@CareX.com?subject=Contact" class="link">support@CareX.com</a>
+                    <div class="social">
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <a class="contact.html"></a>
+                    <h1 style="text-align:center;">Emergency situation? </h1>
+                    <a href="AskDoctor.html" class="btn btn-1">Click Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Start Footer -->
+    <footer>
+        <div class="footer-section">
+            <div class="col-lg-3 col-md-6">
+
+            <div class="footer-title">Contact Us</div>
+            <div class="footer-links">
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i> Jordan, Amman
+                  </li>
+                  <li>
+                    <i class="fas fa-phone"></i>+962 79 999-999-99
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i> support@carex.com
+                  </li>
+            </div>
+    
+        </ul>
+      </div>
+    </div>
+    <!--Footer-->
+        <div class="footer-section">
+            <div class="col-lg-3 col-md-6">
+            <div class="footer-title">Follow Us</div>
+            <div class="social-links">
+
+                <li><a href="www.facebook.com"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="twitter.com"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="instagram.com"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="linkedin.com"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>

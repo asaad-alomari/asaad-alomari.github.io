@@ -1,0 +1,732 @@
+:root {
+    --section-padding: 30px;
+
+}
+body{
+    font-family: "Work Sane", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Start Components */
+
+.speical-heading{
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+.speical-heading + p {
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+@media (max-width: 767px) {
+    .speical-heading {
+        font-size: 60px;
+    }
+    .speical-heading + p{
+        margin-top: -20px;
+    }
+}
+/* End Components */
+
+/* Start Heading */
+.header{
+    padding: 3px;
+    background: darkblue;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+}
+.container li a:hover {
+    cursor: pointer;
+    opacity: 0.95;
+    box-shadow: 5px 5px 5px 5px rgba(3, 92, 195, 0.5);
+}
+.header .logo{
+    width: 60px;
+}
+.header .links{
+    position: relative;
+
+}
+.header .links:hover .icon span:nth-child(2){
+    width: 100%;
+}
+.header .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header .links .icon span{
+    background-color: white;
+    text-shadow: #1bff4c;
+    margin-bottom: 5px;
+    height: 2px;
+}
+.header .links .icon span:first-child{
+    width: 100%;
+}
+.header .links .icon span:nth-child(2){
+    width: 60%;
+    transition: 0.3s;
+}   
+.header .links .icon span:last-child{
+    width: 100%;
+
+}
+.header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px); 
+    display: none;
+    z-index: 1;
+}
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+.header .links:hover ul{
+    display: block;
+}
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+
+}
+.header .links ul li a:hover {
+    padding-left: 25px;
+    
+}
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid rgb(0, 132, 255);
+}
+
+/* Editing Locations Dropdown */
+
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: #1b9bff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: #1bff4c;
+
+}
+ul li:hover ul.dropdown{
+    display: block;
+}  
+/* Strating Landing Section*/
+.landing {
+    background-image: url(Images/Homepage/logo2.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+.landing .intro-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
+
+}
+.landing .intro-text h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+/* Button Edit */
+.landing .intro-text button{
+    font-size: 18px;
+    line-height: 1.8;
+    border: none;
+    color: #1b9bff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.intro-text button:hover {
+    background-color: #1bff4c;
+}
+/*Start Features*/
+.featuers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.featuers .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+.featuers .feat{
+    padding: 20px;
+    text-align: center;
+}
+.featuers .feat i{
+    background-color: none;
+}
+.featuers .feat h3{
+    font-weight: 800;
+    margin: 30 0;
+}
+.featuers .feat p{
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+}
+/* Start Service */
+.services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.services .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.services .services-content .srv{
+    display: flex;
+    margin-bottom: 40px;
+}
+/* For mobile Design */
+@media (max-width: 767px)
+{
+    .services .services-content .srv{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.services .services-content .srv i{
+    color: darkblue;  
+    flex-basis: 60px;
+}
+.services .services-content .srv .text{
+    flex: 1;
+}
+.services .services-content .srv .text h3{
+    margin: 0 0 20px;
+}
+.services .services-content .srv .text p{
+    color: rgb(45, 38, 38);
+    font-weight: 300;
+    line-height: 1.2;
+}
+.services .services-content .image{
+    position: relative;
+    margin-right: 120px;
+}
+.services .services-content .image::before{
+    content: '';
+    background-color: #2c4755;
+    width: 80px;
+    height: calc(100% + 100px);
+    top: -50px;
+    position: absolute;
+    right: -80px;
+    z-index: -1;
+}
+.services .services-content .image img {
+    width: 120%;
+    height: 280px;
+}
+/* End Service */
+/*  Start Contact */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-padding);
+
+}
+.contact .info{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+}
+.contact .info label{
+    font-size: 30px;
+    font-weight: 800;
+    color: #2c4755;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+.contact label{
+    color: #2c4755;
+}
+.contact .info .link{
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    color: #10cab7;
+    text-decoration: none;   
+}
+.contact .info .social{
+    display: flex;
+    justify-content: center;
+    margin-top: 20;
+    font-size: 16px;
+}
+.contact .info .social i {
+    margin-left: 10px;
+    color: #2c4755;
+}
+/* Start Footer */
+footer {
+    background-color: darkblue;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section .footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.footer-section .footer-links {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-section .footer-links a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+.footer-section .footer-links a:hover {
+    color: rgb(0, 255, 68);
+}
+
+.footer-section .social-links {
+    display: flex;
+}
+
+.footer-section .social-links a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.footer-section .social-links a:hover {
+    color: rgb(68, 255, 0);
+}
+
+  
+/* Smoth Scrolling (HTML) */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Design Buttton for EmgercyHelp */
+.btn {
+    text-decoration: none;
+    padding: 15px 26px;
+    font-size: 2rem;
+    position: relative;
+    margin: 25px;    
+    padding-bottom: 30px;
+    
+}
+.btn-1 {
+    background-color: #000;
+    color: rgb(255, 0, 0);
+    border-radius: 20px;
+    transition: 0.3s ease;
+    align-items: center;
+}
+.btn-1::after, .btn-1::before{
+    content:"";
+    position: absolute;
+    opacity: 0.3;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: transform 0.3s ease;
+}
+.btn-1:hover{
+    transform: translate(-12px, -12px);
+}
+.btn-1:hover::after {
+    transform: translate(6px, 6px)
+}
+.btn-1:hover::before {
+    transform: translate(12px, 12px)
+}
+
+/* Contact Us Page */
+form {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+  
+input[type="submit"] {
+    width: 106%;
+    background-color: #1b9bff;
+    color: white;
+    border: 0;
+    cursor: pointer;
+  }
+  
+input[type="submit"]:hover {
+    background-color: #0082e6;
+}
+body .contact {
+    padding: 0;
+    margin: 0;
+}
+
+/* Login Page */
+.login body .contanier-login {
+    padding: 0;
+    margin: 0;
+}
+.title-login {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #666;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+.login-link a {
+    color: #1b9bff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.recover-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #666;
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+.recover-link a {
+    color: #1b9bff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  /* Ask Doctor Design*/
+.AskDoctor body .doctor-ask{
+    padding: 0;
+    margin: 0;
+}
+.menu-icons{
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner-menu-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+.inner-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.inner-menu-icons i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: darkblue;
+    color: white;
+    border-radius: 100px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+.inner-menu-icons i:hover{
+    transform: rotate(450deg);
+    background: #37c3a8;
+}
+.inner-menu-content span{
+    font-size: 1.5rem;
+}
+/* Products Page */
+#bmi-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  #bmi-calculator label {
+    margin-bottom: 10px;
+  }
+
+  #bmi-calculator input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  #bmi-calculator button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #bmi-result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Products Page */ 
+.contanier-products {
+      width: 1350px;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 35px;
+}
+.box-products {
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 25px;
+    box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 12%);
+    gap: 17.5px;
+}
+h2 {
+    color: #0082e6;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+}
+h2:hover{
+    color: #10cab7;
+}
+.contanier-products img {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin: auto;
+}
+.contanier-products img:hover{
+    cursor: pointer;
+    opacity: 0.95;
+    box-shadow: 5px 5px 5px 5px rgba(22, 255, 158, 0.5);
+
+}
+.box-products p{
+    padding: 0 20px;
+    font-size: 12.5px;
+    line-height: 1.35;
+    color:gray;
+}
+.box-products span {
+    color: #ff0000;
+}
+.box-products .options-products{
+    margin-bottom: 25px;
+}
+
+.box-products .options-products a{
+    color: white;
+    background-color:#0082e6;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 50px;
+}
+.box-products .options-products a:hover{
+    background-color: darkblue;
+}
+/* Weight & Height Calculate */
+.wrapper-Height span { /* Wanna you get an error */
+    color:red;
+}   
+.wrapper-Height {
+    position: relative;
+    bottom: -20%;
+    width: 170%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px 10px; 
+}
+.wrapper-Height input {
+    outline: none;
+    padding: 5px;
+    color: black;
+}
+.wrapper-Height button {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background: rgb(0, 189, 241);
+    display: block;
+    margin-top: -2%;
+    cursor: pointer;
+    border-radius: 20%;
+    
+}
+.wrapper-Height button:hover {
+    border-color: black;
+}
+.cal-para {
+    color: #10cab7;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Locations Page */
+.contanier-loc {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contanier-loc h1{
+    color: #333;
+    margin-bottom: 30px;
+}
+iframe {
+    width: 80%;
+    height: 500px;
+    filter: invert(100%);
+}
+
+/* Login , Register , Forgot Page*/ 
+.h3goo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+h3 {
+    margin: 0;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+#login-form {
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+#forgot-password-form {
+    width: 50%;
+    height: 50%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carex Pharmacy | Ask a Doctor</title>
+    <link rel="shortcuts icon" href="Images/Logo/logoo.png">
+    <link rel="stylesheet" href="styleGo.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!--Start Header-->
+        <div class="header">
+            <div class="container">
+                <a href="/homepage.html">
+                    <img class="logo" src="Images/Logo/logoo.png"  alt="">
+                    <li><a class="homepage.html" href="homepage.html">Home</a></li>
+                    <li>
+                        <a href="AvailableQuanilty.php">Products</a>
+                        <select name="pages" onchange="location = this.value;">
+                            <option>Branches</option>
+                            <option value="AvailableQuanilty.php">Irbid</option>
+                            <option value="KarakProducts.php">Karak</option>
+                            <option value="Ma'an.php">Ma'an</option>
+                            <option value="Amman.php">Amman</option>  
+                        </select>
+                    </li>
+                    <li><a href="homepage.html#services">Services</a></li>
+                    <li><a href="AskDoctor.html">Ask a Doctor</a></li>
+                    <li><a href="locations.html">Locations ꜜ</a></li>
+                    <!--<li><a href="login.html">Account</a></li>-->
+                </a>
+                <div class="links">
+                    <span class="icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <ul>    
+                        <li><a class="homepage.html" href="homepage.html">Home</a></li>
+                        <li><a href="AvailableQuanilty.php">Products</a></li>
+                        <li><a href="homepage.html#services">Services</a></li>
+                        <li><a href="AskDoctor.html">Ask a Doctor</a></li>
+                        <li>
+                            <a href="locations.html">Locations ꜜ</a>
+                            <!--<ul class="dropdown">
+                                <li><a href="#">Amman</a></li>
+                                <li><a href="#">Irbid</a></li>
+                                <li><a href="#">Karak</a></li>
+                                <li><a href="#">Ma'an</a></li>
+                            </ul><-->
+                        </li>
+                        <!--<li><a href="login.html">Account</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-icons">
+            <div class="inner-menu-icons">
+                <i class="fas fa-clock"></i>
+                <div class="inner-menu-content">
+                    <span>Work Time: 09:00 AM to 22:00 PM</span>
+                    <span>Days: Sunday - Thursday</span>
+                </div>
+            </div>
+            <div class="inner-menu-icons">
+                <i class="fas fa-phone-alt"></i>
+                <div class="inner-menu-content">
+                    <span>Call Us</span>
+                    <span>+962 79 985 201 90</span>
+                </div>
+            </div>
+            <div class="inner-menu-icons">
+                <i class="fas fa-envelope-square"></i>
+                <div class="inner-menu-content">
+                    <span>Email Us:</span>
+                    <span>support@carex.com</span>
+                </div>
+            </div>
+
+        </div>
+        <!--End Header-->
+        <div class="doctor-ask">
+            <div class="title-login">Or You can send a message to<nav>our doctors.</nav></div>
+            <form action="AskDoctorMessage.php" method="post">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Your name (Optional)</span>
+                        <input type="text" name="fullName" placeholder="Enter your name:" >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Your Phone Number (Optional)</span>
+                        <input type="text" name="phoneNumber" placeholder="Your phone number">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email Address (Required)</span>
+                        <input type="text" name="eMail" placeholder="Enter your e-mail" required>
+                    </div>
+                    <label for="message">Your Message (Required)</label>
+                    <textarea  name="messageGo" id="message" placeholder="How can we help you?" required></textarea><br><br>
+                <div class="button">
+                    <input type="submit" value="Send A Message">
+                    </div>
+                </form>
+        </div>
+        <!--Start Footer -->
+        <footer>
+            <div class="footer-section">
+                <div class="col-lg-3 col-md-6">
+    
+                <div class="footer-title">Contact Us</div>
+                <div class="footer-links">
+                      <li>
+                        <i class="fas fa-map-marker-alt"></i> Jordan, Amman
+                      </li>
+                      <li>
+                        <i class="fas fa-phone"></i>+962 79 999-999-99
+                      </li>
+                      <li>
+                        <i class="fas fa-envelope"></i> support@carex.com
+                      </li>
+                </div>
+        
+            </ul>
+          </div>
+            </div>
+       <!--Footer-->
+            <div class="footer-section">
+                <div class="col-lg-3 col-md-6">
+                <div class="footer-title">Follow Us</div>
+                <div class="social-links">
+    
+                    <li><a href="www.facebook.com"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="twitter.com"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="instagram.com"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="linkedin.com"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </div>
+            </div>
+        </footer>   
+</body>
+</html>
